@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+ "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+ "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <definition name="default" template="/WEB-INF/layouts/default.jsp">
+        <put-attribute name="header" value="/WEB-INF/layouts/header.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/layouts/menu.jsp" />
+        <put-attribute name="body" value="/WEB-INF/views/body.jsp" />
+        <!--<put-attribute name="footer" value="/WEB-INF/layouts/footer.jsp" />-->
+    </definition>
+
+    <definition extends="default"  name="body">
+        <put-attribute name="body" value="/WEB-INF/views/body.jsp" />
+    </definition>
+    <definition extends="default"  name="sale">
+        <put-attribute  name="body" value="/WEB-INF/views/sale.jsp" />
+    </definition>
+    <definition extends="default"  name="order">
+        <put-attribute  name="body" value="/WEB-INF/views/order.jsp" />
+    </definition>
+    <definition extends="default"  name="product">
+        <put-attribute  name="body" value="/WEB-INF/views/product.jsp" />
+    </definition>
+    <definition extends="default"  name="list">
+        <put-attribute  name="body" value="/WEB-INF/views/list.jsp" />
+    </definition>
+    <definition extends="default"  name="report">
+        <put-attribute  name="body" value="/WEB-INF/views/report.jsp" />
+    </definition>
+    <definition extends="default"  name="purchase">
+        <put-attribute  name="body" value="/WEB-INF/views/purchase.jsp" />
+    </definition>
+    <definition extends="default"  name="return">
+        <put-attribute  name="body" value="/WEB-INF/views/return.jsp" />
+    </definition>
+    <definition extends="default"  name="add">
+        <put-attribute  name="body" value="/WEB-INF/views/add.jsp" />
+    </definition>
+    <definition extends="default"  name="edit">
+        <put-attribute  name="body" value="/WEB-INF/views/edit.jsp" />
+    </definition>
+    <definition extends="default"  name="login">
+        <put-attribute  name="body" value="/WEB-INF/views/login.jsp" />
+    </definition>
+    <definition extends="default"  name="signup">
+        <put-attribute  name="body" value="/WEB-INF/views/signup.jsp" />
+    </definition>
+    <definition extends="default"  name="editorder">
+        <put-attribute  name="body" value="/WEB-INF/views/editorder.jsp" />
+    </definition>
+    <definition extends="default"  name="user">
+        <put-attribute  name="body" value="/WEB-INF/views/user.jsp" />
+    </definition>
+    <definition extends="default"  name="stock">
+        <put-attribute  name="body" value="/WEB-INF/views/stock.jsp" />
+    </definition>
+    <definition extends="default"  name="test">
+        <put-attribute  name="body" value="/WEB-INF/views/test.jsp" />
+    </definition>
+    <definition extends="default"  name="home">
+        <put-attribute  name="body" value="/WEB-INF/layouts/home.jsp" />
+    </definition>
+    <definition extends="default"  name="bill">
+        <put-attribute  name="body" value="/WEB-INF/views/bill.jsp" />
+    </definition>
+    <definition extends="default"  name="quantitylist">
+        <put-attribute  name="body" value="/WEB-INF/views/quantitylist.jsp" />
+    </definition>
+    
+    
+</tiles-definitions>
